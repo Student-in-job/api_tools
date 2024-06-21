@@ -1,0 +1,7 @@
+# MONGO_HOST = 'mongodb://katmReport:dQZq7L7ke9Hv@10.20.54.195:27017/paymart'
+MONGO_HOST = 'mongodb://katmReport:dQZq7L7ke9Hv@10.20.31.24:27017/paymart'
+MONGO_DATABASE = 'paymart'
+COLLECTION_ACCOUNTS = 'accounts'
+COLLECTION_KATM_CLAIMS = 'katm_claims'
+COLLECTION_KATM_RECEIVED_REPORTS = 'katm_received_reports'
+COLLECTION_KATM_REPORTS = 'katm_reports'

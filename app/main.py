@@ -46,7 +46,9 @@ def get_data(collection_name: str, contract_id: int, katm_report: str=None):
     for item in collection.find(query_filter):
         item['_id'] = "Object({0})".format(str(item['_id']))
         item['body_json'] = json.loads(item['body'])
-        item['body_json']['security']['pPassword'] = "***************"
+        if 'security' in item['body_json']:
+            if 'pPassword' in item['body_json']['security']:
+                item['body_json']['security']['pPassword'] = "***************"
         del(item['body'])
         arr.append(item)
         # item.pop('body')
